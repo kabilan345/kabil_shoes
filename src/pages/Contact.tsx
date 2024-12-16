@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 import  db  from '../firebase/firebase'; // Adjust the path to your firebase.js file
 import { collection, addDoc } from "firebase/firestore";
 
-const Contact = () => {
+export const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
